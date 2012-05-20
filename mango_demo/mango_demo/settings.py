@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Admin', 'mingy711@hotmail.com'),
+    ('Admin', 'mingy711@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -132,9 +132,10 @@ INSTALLED_APPS = (
 )
 
 ACCOUNT_ACTIVATION_DAYS = 2
-EMAIL_HOST = 'losthost'
+EMAIL_HOST = 'smtp.gmail.com'
 DEFAULT_FROM_EMAIL = 'mingy711@gmail.com'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/accounts/profile/'
+SMTPSSLPORT=465
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
