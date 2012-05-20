@@ -1,8 +1,6 @@
 #from django.conf.urls import patterns, include, url
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
-from django.contrib import admin
-admin.autodiscover()
 
 from tastypie.api import Api
 from mango_demo.api.resources import UserResource
@@ -32,7 +30,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^admin/(.*)', include(admin.site.root)),
+    #url(r'^admin/(.*)', include(admin.site.root)),
     url(r'^accounts/', include('registration.urls')),
     url(r'^$', direct_to_template,
             { 'template': 'index.html' }, 'index'),
