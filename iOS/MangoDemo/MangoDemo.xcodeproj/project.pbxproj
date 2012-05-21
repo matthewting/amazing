@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B00B8BA1568CD08007F07E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B8B91568CD08007F07E4 /* UIKit.framework */; };
+		7B00B8BC1568CD08007F07E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B8BB1568CD08007F07E4 /* Foundation.framework */; };
+		7B00B8BE1568CD08007F07E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B8BD1568CD08007F07E4 /* CoreGraphics.framework */; };
+		7B00B8C41568CD08007F07E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B00B8C21568CD08007F07E4 /* InfoPlist.strings */; };
+		7B00B8C61568CD08007F07E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00B8C51568CD08007F07E4 /* main.m */; };
+		7B00B8CA1568CD08007F07E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00B8C91568CD08007F07E4 /* AppDelegate.m */; };
+		7B00B8CD1568CD08007F07E4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00B8CB1568CD08007F07E4 /* MainStoryboard_iPhone.storyboard */; };
+		7B00B8D01568CD08007F07E4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00B8CE1568CD08007F07E4 /* MainStoryboard_iPad.storyboard */; };
+		7B00B8D31568CD08007F07E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00B8D21568CD08007F07E4 /* ViewController.m */; };
+		7B00B8DB1568CD08007F07E4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B8DA1568CD08007F07E4 /* SenTestingKit.framework */; };
+		7B00B8DC1568CD09007F07E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B8B91568CD08007F07E4 /* UIKit.framework */; };
+		7B00B8DD1568CD09007F07E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B8BB1568CD08007F07E4 /* Foundation.framework */; };
+		7B00B8E51568CD09007F07E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B00B8E31568CD09007F07E4 /* InfoPlist.strings */; };
+		7B00B8E81568CD09007F07E4 /* MangoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00B8E71568CD09007F07E4 /* MangoDemoTests.m */; };
+		7BC68C571568DCCF00DA9913 /* LoginViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC68C551568DCCF00DA9913 /* LoginViewControlller.m */; };
+		7BC68C5C1568E6F800DA9913 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC68C5A1568E6F800DA9913 /* RegistrationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B00B8DE1568CD09007F07E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B00B8AC1568CD08007F07E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B00B8B41568CD08007F07E4;
+			remoteInfo = MangoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B00B8B51568CD08007F07E4 /* MangoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B00B8B91568CD08007F07E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B00B8BB1568CD08007F07E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B00B8BD1568CD08007F07E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B00B8C11568CD08007F07E4 /* MangoDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangoDemo-Info.plist"; sourceTree = "<group>"; };
+		7B00B8C31568CD08007F07E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B00B8C51568CD08007F07E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B00B8C71568CD08007F07E4 /* MangoDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MangoDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7B00B8C81568CD08007F07E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B00B8C91568CD08007F07E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B00B8CC1568CD08007F07E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		7B00B8CF1568CD08007F07E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7B00B8D11568CD08007F07E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7B00B8D21568CD08007F07E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7B00B8D91568CD08007F07E4 /* MangoDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B00B8DA1568CD08007F07E4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7B00B8E21568CD09007F07E4 /* MangoDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MangoDemoTests-Info.plist"; sourceTree = "<group>"; };
+		7B00B8E41568CD09007F07E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B00B8E61568CD09007F07E4 /* MangoDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MangoDemoTests.h; sourceTree = "<group>"; };
+		7B00B8E71568CD09007F07E4 /* MangoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoDemoTests.m; sourceTree = "<group>"; };
+		7BC68C541568DCCF00DA9913 /* LoginViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControlller.h; sourceTree = "<group>"; };
+		7BC68C551568DCCF00DA9913 /* LoginViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControlller.m; sourceTree = "<group>"; };
+		7BC68C591568E6F800DA9913 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		7BC68C5A1568E6F800DA9913 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B00B8B21568CD08007F07E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00B8BA1568CD08007F07E4 /* UIKit.framework in Frameworks */,
+				7B00B8BC1568CD08007F07E4 /* Foundation.framework in Frameworks */,
+				7B00B8BE1568CD08007F07E4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B00B8D51568CD08007F07E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00B8DB1568CD08007F07E4 /* SenTestingKit.framework in Frameworks */,
+				7B00B8DC1568CD09007F07E4 /* UIKit.framework in Frameworks */,
+				7B00B8DD1568CD09007F07E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B00B8AA1568CD08007F07E4 = {
+			isa = PBXGroup;
+			children = (
+				7B00B8BF1568CD08007F07E4 /* MangoDemo */,
+				7B00B8E01568CD09007F07E4 /* MangoDemoTests */,
+				7B00B8B81568CD08007F07E4 /* Frameworks */,
+				7B00B8B61568CD08007F07E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B00B8B61568CD08007F07E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B00B8B51568CD08007F07E4 /* MangoDemo.app */,
+				7B00B8D91568CD08007F07E4 /* MangoDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B00B8B81568CD08007F07E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B00B8B91568CD08007F07E4 /* UIKit.framework */,
+				7B00B8BB1568CD08007F07E4 /* Foundation.framework */,
+				7B00B8BD1568CD08007F07E4 /* CoreGraphics.framework */,
+				7B00B8DA1568CD08007F07E4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B00B8BF1568CD08007F07E4 /* MangoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7BC68C541568DCCF00DA9913 /* LoginViewControlller.h */,
+				7BC68C551568DCCF00DA9913 /* LoginViewControlller.m */,
+				7B00B8C81568CD08007F07E4 /* AppDelegate.h */,
+				7B00B8C91568CD08007F07E4 /* AppDelegate.m */,
+				7B00B8CB1568CD08007F07E4 /* MainStoryboard_iPhone.storyboard */,
+				7B00B8CE1568CD08007F07E4 /* MainStoryboard_iPad.storyboard */,
+				7B00B8D11568CD08007F07E4 /* ViewController.h */,
+				7B00B8D21568CD08007F07E4 /* ViewController.m */,
+				7B00B8C01568CD08007F07E4 /* Supporting Files */,
+				7BC68C591568E6F800DA9913 /* RegistrationViewController.h */,
+				7BC68C5A1568E6F800DA9913 /* RegistrationViewController.m */,
+			);
+			path = MangoDemo;
+			sourceTree = "<group>";
+		};
+		7B00B8C01568CD08007F07E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B00B8C11568CD08007F07E4 /* MangoDemo-Info.plist */,
+				7B00B8C21568CD08007F07E4 /* InfoPlist.strings */,
+				7B00B8C51568CD08007F07E4 /* main.m */,
+				7B00B8C71568CD08007F07E4 /* MangoDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B00B8E01568CD09007F07E4 /* MangoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B00B8E61568CD09007F07E4 /* MangoDemoTests.h */,
+				7B00B8E71568CD09007F07E4 /* MangoDemoTests.m */,
+				7B00B8E11568CD09007F07E4 /* Supporting Files */,
+			);
+			path = MangoDemoTests;
+			sourceTree = "<group>";
+		};
+		7B00B8E11568CD09007F07E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B00B8E21568CD09007F07E4 /* MangoDemoTests-Info.plist */,
+				7B00B8E31568CD09007F07E4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B00B8B41568CD08007F07E4 /* MangoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B00B8EB1568CD09007F07E4 /* Build configuration list for PBXNativeTarget "MangoDemo" */;
+			buildPhases = (
+				7B00B8B11568CD08007F07E4 /* Sources */,
+				7B00B8B21568CD08007F07E4 /* Frameworks */,
+				7B00B8B31568CD08007F07E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MangoDemo;
+			productName = MangoDemo;
+			productReference = 7B00B8B51568CD08007F07E4 /* MangoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B00B8D81568CD08007F07E4 /* MangoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B00B8EE1568CD09007F07E4 /* Build configuration list for PBXNativeTarget "MangoDemoTests" */;
+			buildPhases = (
+				7B00B8D41568CD08007F07E4 /* Sources */,
+				7B00B8D51568CD08007F07E4 /* Frameworks */,
+				7B00B8D61568CD08007F07E4 /* Resources */,
+				7B00B8D71568CD08007F07E4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B00B8DF1568CD09007F07E4 /* PBXTargetDependency */,
+			);
+			name = MangoDemoTests;
+			productName = MangoDemoTests;
+			productReference = 7B00B8D91568CD08007F07E4 /* MangoDemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B00B8AC1568CD08007F07E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7B00B8AF1568CD08007F07E4 /* Build configuration list for PBXProject "MangoDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B00B8AA1568CD08007F07E4;
+			productRefGroup = 7B00B8B61568CD08007F07E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B00B8B41568CD08007F07E4 /* MangoDemo */,
+				7B00B8D81568CD08007F07E4 /* MangoDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B00B8B31568CD08007F07E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00B8C41568CD08007F07E4 /* InfoPlist.strings in Resources */,
+				7B00B8CD1568CD08007F07E4 /* MainStoryboard_iPhone.storyboard in Resources */,
+				7B00B8D01568CD08007F07E4 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B00B8D61568CD08007F07E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00B8E51568CD09007F07E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B00B8D71568CD08007F07E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B00B8B11568CD08007F07E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00B8C61568CD08007F07E4 /* main.m in Sources */,
+				7B00B8CA1568CD08007F07E4 /* AppDelegate.m in Sources */,
+				7B00B8D31568CD08007F07E4 /* ViewController.m in Sources */,
+				7BC68C571568DCCF00DA9913 /* LoginViewControlller.m in Sources */,
+				7BC68C5C1568E6F800DA9913 /* RegistrationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B00B8D41568CD08007F07E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00B8E81568CD09007F07E4 /* MangoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B00B8DF1568CD09007F07E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B00B8B41568CD08007F07E4 /* MangoDemo */;
+			targetProxy = 7B00B8DE1568CD09007F07E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B00B8C21568CD08007F07E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B00B8C31568CD08007F07E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7B00B8CB1568CD08007F07E4 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B00B8CC1568CD08007F07E4 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7B00B8CE1568CD08007F07E4 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B00B8CF1568CD08007F07E4 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7B00B8E31568CD09007F07E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B00B8E41568CD09007F07E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B00B8E91568CD09007F07E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B00B8EA1568CD09007F07E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B00B8EC1568CD09007F07E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangoDemo/MangoDemo-Prefix.pch";
+				INFOPLIST_FILE = "MangoDemo/MangoDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7B00B8ED1568CD09007F07E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangoDemo/MangoDemo-Prefix.pch";
+				INFOPLIST_FILE = "MangoDemo/MangoDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7B00B8EF1568CD09007F07E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MangoDemo.app/MangoDemo";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangoDemo/MangoDemo-Prefix.pch";
+				INFOPLIST_FILE = "MangoDemoTests/MangoDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7B00B8F01568CD09007F07E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MangoDemo.app/MangoDemo";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MangoDemo/MangoDemo-Prefix.pch";
+				INFOPLIST_FILE = "MangoDemoTests/MangoDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B00B8AF1568CD08007F07E4 /* Build configuration list for PBXProject "MangoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B00B8E91568CD09007F07E4 /* Debug */,
+				7B00B8EA1568CD09007F07E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B00B8EB1568CD09007F07E4 /* Build configuration list for PBXNativeTarget "MangoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B00B8EC1568CD09007F07E4 /* Debug */,
+				7B00B8ED1568CD09007F07E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B00B8EE1568CD09007F07E4 /* Build configuration list for PBXNativeTarget "MangoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B00B8EF1568CD09007F07E4 /* Debug */,
+				7B00B8F01568CD09007F07E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B00B8AC1568CD08007F07E4 /* Project object */;
+}
