@@ -1,4 +1,7 @@
 from django.contrib.auth.models import User
+from django.template import RequestContext
+from django.shortcuts import render_to_response
+from django.contrib.auth import authenticate, login
 from tastypie.resources import ModelResource, ALL, ALL_WITH_RELATIONS
 from django.db import IntegrityError
 from tastypie.exceptions import BadRequest
@@ -28,13 +31,70 @@ class SillyAuthorization(Authorization):
     #    return object_list.none()
 
 from mango_demo.models import MangoUser
+
+class MangoLoginResource(ModelResource):
+    class Meta:
+        queryset = MangoUser.objects.all()
+        resource_name = 'mangologin'
+        serializer = Serializer(formats=['json'])
+        authentication = SillyAuthentication()
+        authorization = SillyAuthorization()
+         
+    
+    def obj_create(self, bundle, request=None, **kwargs):
+        username = bundle.data['username']
+        password = bundle.data['password']
+        
+        print username
+        print password
+        
+        try:
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                if user.is_active:
+                    print 'login'
+                    login(request, user)
+#                    return render_to_response('index.html',
+#                      {
+#                        'authtoken': 'abcde'
+#                      },
+#                      context_instance=RequestContext(request)
+#                    )
+                    #raise BadRequest("login account")
+                    bundle.data['authtoken'] = {'authtoken':'abcde'}
+                else:
+                    raise BadRequest("disabled account")
+            else:
+                raise BadRequest("wrong user / password")
+            
+        except IntegrityError:                
+            raise BadRequest('That username already exists!!!')
+        
+        return bundle
+#        user = authenticate(username=username, password=password)
+#        if user is not None:
+#            if user.is_active:
+#                print 'login'
+#                login(request, user)
+##                return render_to_response('registration/activation_complete.html',
+##                  {
+##                    'authtoken': 'abcde'
+##                  },
+##                  context_instance=RequestContext(request)
+##                )
+#                raise BadRequest("disabled account")
+#            else:
+#                raise BadRequest("disabled account")
+#        else:
+#            raise BadRequest("wrong user / password")
+
 class MangoUserResource(ModelResource):
     class Meta:
         queryset = MangoUser.objects.all()
         resource_name = 'mangouser'
         serializer = Serializer(formats=['json'])
         authentication = SillyAuthentication()
-        authorization = SillyAuthorization()              
+        authorization = SillyAuthorization()
 
     def obj_create(self, bundle, request=None, **kwargs):            
         username = bundle.data['username']

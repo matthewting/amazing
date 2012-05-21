@@ -5,12 +5,14 @@ from django.views.generic.simple import direct_to_template
 from tastypie.api import Api
 from mango_demo.api.resources import UserResource
 from mango_demo.api.resources import MangoUserResource
+from mango_demo.api.resources import MangoLoginResource
 
 v1_api = Api(api_name='v1')
 v1_api.register(UserResource())
 
 v2_api = Api(api_name='v2')
 v2_api.register(MangoUserResource())
+v2_api.register(MangoLoginResource())
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin

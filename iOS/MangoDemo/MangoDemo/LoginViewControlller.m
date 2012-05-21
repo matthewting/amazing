@@ -59,29 +59,8 @@
 
 - (IBAction)loginAction:(id)sender {
     
-//    NSHTTPURLResponse * response;
-//    NSError * error;
-//    NSMutableURLRequest *request;
-//    request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://127.0.0.1:8000/accounts/login/"]
-//                                           cachePolicy:NSURLRequestReloadIgnoringCacheData 
-//                                       timeoutInterval:60];
-//    NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];	
-//    
-//    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);
-//    NSArray * all = [NSHTTPCookie cookiesWithResponseHeaderFields:[response allHeaderFields] forURL:[NSURL URLWithString:@"http://127.0.0.1:8000/accounts/login/"]];
-//    NSLog(@"%d", all.count);
-//    
-//    NSString * csrftoken = NULL;
-//    
-//    for (NSHTTPCookie *cookie in all) {
-//        if(cookie.name == @"csrftoken") {
-//            csrftoken = cookie.value;
-//        }
-//        NSLog(@"Name: %@ : Value: %@", cookie.name, cookie.value); 
-//    }
-
     // Create the URL from a string.
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8000/accounts/login/"];
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/api/v2/mangologin/"];
     NSMutableURLRequest *requestLogin = [NSMutableURLRequest requestWithURL:url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     
@@ -97,7 +76,7 @@
     
     
     
-    NSString *myRequestString =  [NSString stringWithFormat:@"username=%@&password=%@", userNameField.text, passwordField.text];
+    NSString *myRequestString =  [NSString stringWithFormat:@"{\"username\":\"%@\",\"password\":\"%@\"}", userNameField.text, passwordField.text];
     NSLog(@"%@", myRequestString);
     
 //    Hard-coded for Testing USe
@@ -123,13 +102,13 @@
     NSString *responseString = [[NSString alloc] initWithData:responseData  encoding:NSUTF8StringEncoding];
     
     // View the data returned - should be ready for parsing.
-    NSLog(@"%@", responseString);
+    NSLog(@"response:%@", responseString);
     
-    NSArray * all = [NSHTTPCookie cookiesWithResponseHeaderFields:[responseLogin allHeaderFields] forURL:[NSURL URLWithString:@"http://localhost:8000/accounts/login/"]];
-    NSLog(@"%d", all.count);
-    for (NSHTTPCookie *cookie in all) {
-        NSLog(@"Name: %@ : Value: %@", cookie.name, cookie.value); 
-    }
+//    NSArray * all = [NSHTTPCookie cookiesWithResponseHeaderFields:[responseLogin allHeaderFields] forURL:[NSURL URLWithString:@"http://127.0.0.1:8000/api/v2/mangouser/"]];
+//    NSLog(@"%d", all.count);
+//    for (NSHTTPCookie *cookie in all) {
+//        NSLog(@"Name: %@ : Value: %@", cookie.name, cookie.value); 
+//    }
     
     
 }

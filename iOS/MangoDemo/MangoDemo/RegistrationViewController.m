@@ -99,7 +99,7 @@
     //    }
     
     // Create the URL from a string.
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/api/v1/user/"];
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8000/api/v2/mangouser/"];
     NSMutableURLRequest *requestLogin = [NSMutableURLRequest requestWithURL:url
                                                                 cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     
@@ -148,7 +148,7 @@ NSString *myRequestString =  [NSString stringWithFormat:@"{\"username\":\"%@\",\
     // View the data returned - should be ready for parsing.
     NSLog(@"%@", responseString);
     
-    NSArray * all = [NSHTTPCookie cookiesWithResponseHeaderFields:[responseLogin allHeaderFields] forURL:[NSURL URLWithString:@"http://127.0.0.1:8000/api/v1/user/"]];
+    NSArray * all = [NSHTTPCookie cookiesWithResponseHeaderFields:[responseLogin allHeaderFields] forURL:[NSURL URLWithString:@"http://127.0.0.1:8000/api/v2/mangouser/"]];
     NSLog(@"%d", all.count);
     for (NSHTTPCookie *cookie in all) {
         NSLog(@"Name: %@ : Value: %@", cookie.name, cookie.value); 
