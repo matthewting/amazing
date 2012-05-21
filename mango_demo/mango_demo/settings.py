@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Admin', 'mingy711@hotmail.com'),
+    ('Admin', 'mingy711@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -16,7 +16,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'mango_demo',                      # Or path to database file if using sqlite3.
         'USER': 'postgres',                      # Not used with sqlite3.
-        'PASSWORD': 'admin',                  # Not used with sqlite3.
+        'PASSWORD': 'Admin',                  # Not used with sqlite3.
         #'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         #'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -95,9 +95,10 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'mango_demo.disable.DisableCSRF',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
@@ -129,12 +130,14 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'tastypie',
     'registration',
+    'mango_demo',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 2
-EMAIL_HOST = 'losthost'
+EMAIL_HOST = 'smtp.gmail.com'
 DEFAULT_FROM_EMAIL = 'mingy711@gmail.com'
 LOGIN_REDIRECT_URL = '/'
+SMTPSSLPORT=465
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
