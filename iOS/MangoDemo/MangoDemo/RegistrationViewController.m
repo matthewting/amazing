@@ -15,6 +15,20 @@
 @synthesize passwordConfField;
 @synthesize userdataField;
 
+-(IBAction)textFieldReturn:(id)sender
+{
+	[sender resignFirstResponder];
+}
+-(IBAction)backgroundTouched:(id)sender
+{
+	[usernameField resignFirstResponder];
+	[passwordField resignFirstResponder];
+	[passwordConfField resignFirstResponder];
+	[userdataField resignFirstResponder];
+	[emailField resignFirstResponder];
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -177,5 +191,6 @@ NSString *myRequestString =  [NSString stringWithFormat:@"{\"username\":\"%@\",\
     
 //    	[self animateTextField: textField up: YES];
 }
+
 
 @end

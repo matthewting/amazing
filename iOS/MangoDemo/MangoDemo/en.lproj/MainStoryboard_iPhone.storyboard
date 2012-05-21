@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XYG-rz-is3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XYG-rz-is3">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Registration View Controller - Item 2-->
         <scene sceneID="2Ik-El-OOm">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUj-6q-o7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JKo-pA-X5n" customClass="RegistrationViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mdO-FG-CPJ">
+                    <view key="view" contentMode="scaleToFill" id="mdO-FG-CPJ" customClass="UIControl">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -33,24 +35,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="JKo-pA-X5n" eventType="editingDidEndOnExit" id="uWi-yp-VYt"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="DcX-py-mie">
                                 <rect key="frame" x="132" y="46" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="JKo-pA-X5n" eventType="editingDidEndOnExit" id="HVG-Wf-Zqt"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="VSu-0k-SRm">
                                 <rect key="frame" x="189" y="82" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="JKo-pA-X5n" eventType="editingDidEndOnExit" id="ZsS-Cv-4Bv"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="46c-Z7-O0l">
                                 <rect key="frame" x="132" y="163" width="97" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="JKo-pA-X5n" eventType="editingDidEndOnExit" id="94O-K5-AOy"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="username:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Djt-Qg-yDF">
                                 <rect key="frame" x="39" y="7" width="86" height="21"/>
@@ -92,6 +106,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="JKo-pA-X5n" eventType="editingDidEndOnExit" id="MNb-Ui-H7u"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" id="MdQ-wA-56T">
                                 <rect key="frame" x="39" y="121" width="80" height="21"/>
@@ -102,6 +119,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="JKo-pA-X5n" eventType="touchDown" id="bGp-wg-lyv"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="t3n-e7-dMX"/>
                     <connections>
@@ -115,11 +135,12 @@
             </objects>
             <point key="canvasLocation" x="153" y="284"/>
         </scene>
+        <!--Login View Controlller - Item 1-->
         <scene sceneID="x0y-c9-NMX">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chy-d5-9ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5wV-bE-sTW" customClass="LoginViewControlller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fff-E3-lDQ">
+                    <view key="view" contentMode="scaleToFill" id="fff-E3-lDQ" customClass="UIControl">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -150,12 +171,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="5wV-bE-sTW" eventType="editingDidEndOnExit" id="Wyf-by-0js"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="46G-Q2-gmU">
                                 <rect key="frame" x="130" y="100" width="171" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="5wV-bE-sTW" eventType="editingDidEndOnExit" id="Zxl-yd-C6b"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="KjJ-xh-fIY">
                                 <rect key="frame" x="29" y="100" width="81" height="21"/>
@@ -180,6 +207,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="5wV-bE-sTW" eventType="touchDown" id="Fk4-Kv-w4c"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ahs-P6-qIc"/>
                     <connections>
@@ -190,6 +220,7 @@
             </objects>
             <point key="canvasLocation" x="153" y="-281"/>
         </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="qc4-ft-McI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6N-JH-L5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,7 +244,9 @@
         <class className="LoginViewControlller" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewControlller.h"/>
             <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
                 <relationship kind="action" name="loginAction:"/>
+                <relationship kind="action" name="textFieldReturn:"/>
                 <relationship kind="outlet" name="indicatorMsgLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="userNameField" candidateClass="UITextField"/>
@@ -222,8 +255,10 @@
         <class className="RegistrationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RegistrationViewController.h"/>
             <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
                 <relationship kind="action" name="registerAction:"/>
                 <relationship kind="action" name="textFieldDidBeginEditing:" candidateClass="UITextField"/>
+                <relationship kind="action" name="textFieldReturn:"/>
                 <relationship kind="action" name="userDataTouch:"/>
                 <relationship kind="outlet" name="emailField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="passwordConfField" candidateClass="UITextField"/>

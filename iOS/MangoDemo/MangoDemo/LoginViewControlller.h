@@ -19,4 +19,7 @@
 - (IBAction)loginAction:(id)sender;
 - (void) animateTextField: (UITextField*) textField up: (BOOL) up;
 
+- (IBAction)textFieldReturn:(id)sender;
+- (IBAction)backgroundTouched:(id)sender;
+
 @end

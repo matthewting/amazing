@@ -160,4 +160,15 @@
 	
 }
 
+-(IBAction)textFieldReturn:(id)sender
+{
+	[sender resignFirstResponder];
+}
+-(IBAction)backgroundTouched:(id)sender
+{
+	[userNameField resignFirstResponder];
+	[passwordField resignFirstResponder];
+}
+
+
 @end
